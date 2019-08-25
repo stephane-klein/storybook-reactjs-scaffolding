@@ -1,9 +1,44 @@
 version: 2.1
 jobs:
-  build:
+  docs-build:
     docker: 
       - image: circleci/node:12.6.0
     steps:
       - checkout
       - run: npm install
       - run: npm run build-storybook
+      - persist_to_workspace:
+          root: ./
+          paths: storybook-static
+  docs-deploy:
+    docker:
+      - image: node:8.10.0
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Install and configure dependencies
+          command: |
+            npm install -g --silent gh-pages@2.0.1
+            git config user.email "contact@stephane-klein.info"
+            git config user.name "Stéphane Klein"
+      - add_ssh_keys:
+          fingerprints:
+            - "f3:78:dc:1e:3c:51:60:e1:f6:db:d2:9d:e6:6e:bc:27"
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: gh-pages --dotfiles --message "[skip ci] Updates" --dist storybook-static
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - docs-build
+      - docs-deploy:
+        requires:
+            - docs-build
+
+
+
+            
