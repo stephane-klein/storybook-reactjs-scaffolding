@@ -1,0 +1,52 @@
+{
+  "name": "storybook",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "i18n": "i18next-scanner --config i18next-scanner.config.js && node i18n-sync.js",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.5.4",
+    "babel-loader": "8.0.6",
+    "webpack": "4.39.2",
+    "eslint": "6.1.0",
+    "eslint-plugin-react": "7.14.3",
+    "@storybook/addons": "5.1.9",
+    "@storybook/addon-actions": "5.1.9",
+    "@storybook/addon-links": "5.1.11",
+    "@storybook/react": "5.1.9",
+    "@storybook/addon-storysource": "5.1.10",
+    "@storybook/addon-viewport": "5.1.10",
+    "storybook-addon-i18next": "1.2.0",
+    "storybook-react-router": "1.0.5",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-router": "5.0.1",
+    "react-router-dom": "5.0.1",
+    "react-scripts": "3.1.1",
+    "i18next": "17.0.11",
+    "i18next-browser-languagedetector": "3.0.3",
+    "i18next-scanner": "2.10.2",
+    "react-i18next": "10.12.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
