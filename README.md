@@ -1,5 +1,7 @@
 # Storybook + ReactJS Scaffolding
 
+See live example: https://stephane-klein.github.io/storybook-reactjs-scaffolding/
+
 Next in the roadmap:
 
 - [x] viewport
