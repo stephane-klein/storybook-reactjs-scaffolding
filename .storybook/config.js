@@ -9,53 +9,93 @@ addParameters({
   },
   viewport: { // Based on this stats: https://gs.statcounter.com/screen-resolution-stats/desktop/europe
     viewports: {
-      '22pc': {
-        name: '22% browser market EU',
+      'desktop-22pc': {
+        name: '22% desktop browser market EU',
         styles: {
           width: '1920px',
           height: '1080px'
         },
         type: 'laptop'
       },
-      '19pc': {
-        name: '19% browser market EU',
+      'desktop-19pc': {
+        name: '19% desktop browser market EU',
         styles: {
           width: '1366px',
           height: '768px'
         },
         type: 'laptop'
       },
-      '8pc': {
-        name: '8% browser market EU',
+      'desktop-8pc': {
+        name: '8% desktop browser market EU',
         styles: {
           width: '1536px',
           height: '864px'
         },
         type: 'laptop'
       },
-      '6pc': {
-        name: '6% browser market EU',
+      'desktop-6pc': {
+        name: '6% desktop browser market EU',
         styles: {
           width: '1440px',
           height: '900px'
         },
         type: 'laptop'
       },
-      '5pc': {
-        name: '5% browser market EU',
+      'desktop-5pc': {
+        name: '5% desktop browser market EU',
         styles: {
           width: '1600px',
           height: '900px'
         },
         type: 'laptop'
       },
-      '4pc': {
-        name: '4% browser market EU',
+      'desktop-4pc': {
+        name: '4% desktop browser market EU',
         styles: {
           width: '1280px',
           height: '1024px'
         },
         type: 'laptop'
+      }, // Based on this stats: https://gs.statcounter.com/screen-resolution-stats/mobile/europe
+      'mobile-30pc': {
+        name: '30% mobile browser market EU',
+        styles: {
+          width: '360px',
+          height: '640px'
+        },
+        type: 'mobile'
+      },
+      'mobile-11pc': {
+        name: '11% mobile browser market EU',
+        styles: {
+          width: '375px',
+          height: '667px'
+        },
+        type: 'mobile'
+      },
+      'mobile-6pc': {
+        name: '6% mobile browser market EU',
+        styles: {
+          width: '360px',
+          height: '720px'
+        },
+        type: 'mobile'
+      },
+      'mobile-5pc': {
+        name: '5% mobile browser market EU',
+        styles: {
+          width: '412px',
+          height: '846px'
+        },
+        type: 'mobile'
+      },
+      'mobile-3pc': {
+        name: '3% mobile browser market EU',
+        styles: {
+          width: '360px',
+          height: '760px'
+        },
+        type: 'mobile'
       }
     }
   }
