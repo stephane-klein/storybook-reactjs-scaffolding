@@ -7,7 +7,7 @@
     "build": "react-scripts build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "i18n": "i18next-scanner --config i18next-scanner.config.js && node i18n-sync.js",
+    "i18n": "i18next-scanner --config i18next-scanner.config.js",
     "lint": "eslint --ignore-path .gitignore .",
     "clean": "rm -rf node_modules"
   },
