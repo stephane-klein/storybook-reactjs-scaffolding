@@ -52,5 +52,11 @@
         ],
         "no-trailing-spaces": "error",
         "no-multiple-empty-lines": "error"
+    },
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "dectect"
+        }
     }
 }
