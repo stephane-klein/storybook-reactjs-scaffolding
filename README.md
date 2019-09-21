@@ -11,7 +11,7 @@ Next in the roadmap:
 
 Scaffolding Content:
 
-- [storybook](https://storybooks-official.netlify.com/), some addons enabled:
+- [storybook](https://storybooks-official.netlify.com/) `5.2.1` with some addons enabled:
   - [`@storybook/addon-actions`](https://github.com/storybookjs/storybook/tree/master/addons/actions)
   - [`@storybook/addon-links`](https://github.com/storybookjs/storybook/tree/master/addons/links)
   - [`@storybook/addon-storysource`](https://github.com/storybookjs/storybook/tree/master/addons/storysource)
