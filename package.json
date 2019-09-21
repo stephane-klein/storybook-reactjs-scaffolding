@@ -36,7 +36,6 @@
     "react-router-dom": "5.0.1",
     "react-scripts": "3.1.2",
     "storybook-addon-i18next": "1.2.1",
-    "storybook-react-router": "1.0.7",
     "webpack": "4.40.2"
   },
   "browserslist": {

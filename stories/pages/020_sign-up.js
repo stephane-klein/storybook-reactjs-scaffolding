@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import StoryRouter from 'storybook-react-router';
+import StoryRouter from '../../.storybook/storybook-react-router';
 import StoryRouterConfig from './StoryRouterConfig';
 import { Route } from 'react-router-dom';
 
