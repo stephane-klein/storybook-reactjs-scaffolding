@@ -1,8 +1,22 @@
+const path = require("path");
+
 module.exports = function ({ config }) {
-    config.module.rules.push({
-        test: /\.(js|jsx)?$/,
-        loaders: [require.resolve('@storybook/addon-storysource/loader')],
-        enforce: 'pre',
+    // This is a workaround https://github.com/storybookjs/storybook/issues/6974#issuecomment-499903328
+    config.module.rules.unshift({
+        test: /\.jsx?$/,
+        include: path.resolve(__dirname, "../src/examples"),
+        loaders: [
+            {
+                loader: require.resolve("@storybook/addon-storysource/loader"),
+                options: {
+                    prettierConfig: {
+                        tabWidth: 4,
+                        trailingComma: "es5",
+                    },
+                },
+            },
+        ],
+        enforce: "pre",
     });
 
     return config;
