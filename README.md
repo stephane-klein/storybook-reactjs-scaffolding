@@ -2,6 +2,8 @@
 
 See live example: https://stephane-klein.github.io/storybook-reactjs-scaffolding/
 
+More informations in French [« How I use storybook »](https://github.com/stephane-klein/personnal-notebook/blob/master/016-comment-j-utilise-storybook-pour-creer-des-apps-react-ou-sites-statiques.md)
+
 Next in the roadmap:
 
 - [x] viewport
