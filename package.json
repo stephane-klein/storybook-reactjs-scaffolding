@@ -34,7 +34,7 @@
     "react-i18next": "10.12.5",
     "react-router": "5.0.1",
     "react-router-dom": "5.0.1",
-    "react-scripts": "3.1.2",
+    "react-scripts": "5.0.1",
     "storybook-addon-i18next": "1.2.1",
     "webpack": "4.40.2"
   },
